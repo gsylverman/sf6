@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-    <div>Results: {{ count }}</div>
+    <h1>Results: {{ count }}</h1>
     <ul>
         {% for key, movie in movies %}
             <li>{{ key+1 }}. {{ movie.title }}</li>
