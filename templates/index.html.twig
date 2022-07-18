@@ -5,7 +5,8 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Results: {{ count }}</h1>
+    <h1 class="bg-blue-500 text-2xl text-center font-bold">Results: {{ count }}</h1>
+    <img src="{{ asset('build/images/waterfall.jpg') }}" alt="image">
     <ul>
         {% for key, movie in movies %}
             <li>{{ key+1 }}. {{ movie.title }}</li>
