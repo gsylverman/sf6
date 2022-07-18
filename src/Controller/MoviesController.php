@@ -24,9 +24,11 @@ class MoviesController extends AbstractController
     {
         $repository = $this->em->getRepository(Movie::class);
         $movies = $repository->findAll();
+        $count = $repository->count([]);
 
         return $this->render('index.html.twig', [
             'movies' => $movies,
+            'count' => $count,
         ]);
     }
 
